@@ -288,6 +288,10 @@ int main(int argc, char *argv[])
 #endif
     }
     
+    // Initialize libfoundation
+    extern void InitializeFoundation(void);
+    InitializeFoundation();
+    
     InitializeFiles();
     InitializePosition();
     InitializeLiterals();
