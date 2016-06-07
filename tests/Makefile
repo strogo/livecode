@@ -26,7 +26,8 @@ guess_platform_script := \
 	esac
 guess_platform := $(shell $(guess_platform_script))
 
-bin_dir ?= $(top_srcdir)/$(guess_platform)-bin
+#bin_dir ?= $(top_srcdir)/$(guess_platform)-bin
+bin_dir = $(top_srcdir)/_build/mac/Debug
 
 ########## LiveCode Script test parameters
 
